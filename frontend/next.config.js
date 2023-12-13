@@ -8,6 +8,12 @@ const nextConfig = {
                 port: '',
                 pathname: '**',
             },
+            {
+                protocol: 'http',
+                hostname: 'www.gutenberg.org',
+                port: '',
+                pathname: '**',
+            },
         ],
     },
 }

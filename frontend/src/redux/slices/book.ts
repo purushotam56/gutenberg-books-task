@@ -69,7 +69,8 @@ export function getAllBooks({ page, ids, type, search }: FetchBooksArgs) {
     return async (dispatch: Dispatch) => {
         dispatch(slice.actions.startLoading());
         try {
-            let url = `http://skunkworks.ignitesol.com:8000/books/?page=${page || 1}&mime_type=image/jpeg`;
+            // let url = `http://skunkworks.ignitesol.com:8000/books/?page=${page || 1}&mime_type=image/jpeg`;
+            let url = `http://localhost:3000/books/?page=${page || 1}&mime_type=image/jpeg`;
             if (ids) {
                 url = `${url}&ids=${ids}`
             }
